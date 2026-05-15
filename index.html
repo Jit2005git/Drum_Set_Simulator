@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drum Kits</title>
+    <title>Drum Set Simulator</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -15,8 +15,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Drum Kits <i class="fas fa-drum"></i></h1>
-    <div class="container"></div>
+    <div class="bg-orb orb-left"></div>
+    <div class="bg-orb orb-right"></div>
+
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">Interactive Rhythm Experience</p>
+        <h1>Drum Set Simulator <i class="fas fa-drum"></i></h1>
+        <p class="subtitle">
+          Trigger layered drum sounds with your mouse or keyboard and enjoy a
+          more energetic, animated practice stage.
+        </p>
+
+        <div class="meta-row">
+          <div class="meta-card">
+            <span class="meta-label">Play Mode</span>
+            <strong>Click or press the highlighted keys</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Best Feeling</span>
+            <strong>Headphones on, volume up</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage">
+        <div class="stage-lights" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="stage-header">
+          <div>
+            <p class="section-label">Sound Pads</p>
+            <h2>Choose your beat</h2>
+          </div>
+          <p class="tip">Keys: C for crash, K for kick, S for snare, T for tom</p>
+        </div>
+
+        <div class="container" role="group" aria-label="Drum kit controls"></div>
+      </section>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
